@@ -1,0 +1,17 @@
+{
+  "name": "Bang! 온라인",
+  "short_name": "Bang!",
+  "description": "친구들과 즐기는 Bang! 카드 게임 (개인용)",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1d1812",
+  "theme_color": "#1d1812",
+  "lang": "ko",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

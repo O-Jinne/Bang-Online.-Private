@@ -1,0 +1,25 @@
+# Fly.io: `fly launch --no-deploy --copy-config` 후 `fly deploy`. app 이름은 전 세계에서 유일해야 합니다.
+app = "bang-online-change-me"
+primary_region = "nrt"       # 도쿄 (한국에서 가까움)
+
+[build]
+
+[env]
+  PORT = "3000"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = "off"   # 게임 상태가 메모리에 있으므로 자동 정지를 끕니다
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    method = "GET"
+    path = "/healthz"
+    interval = "30s"
+    timeout = "3s"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

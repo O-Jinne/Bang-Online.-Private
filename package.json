@@ -1,0 +1,16 @@
+{
+  "name": "bang-online",
+  "version": "1.0.0",
+  "description": "Bang! 기본판 온라인 (개인용, 텍스트 카드)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/rules.js && node test/ratings.js && node test/remote-store.js && node test/server-stats.js && node test/manual.js && node test/sim.js 500"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

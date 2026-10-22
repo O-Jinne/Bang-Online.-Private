@@ -1,0 +1,3 @@
+Fonts (SIL Open Font License 1.1), via Fontsource:
+- Rye (Sorkin Type), Special Elite (Astigmatic), Black Han Sans (Zess Type)
+Icons: game-icons.net, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/) — authors Lorc, Delapouite, Skoll and contributors.

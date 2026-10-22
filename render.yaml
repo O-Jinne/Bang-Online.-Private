@@ -1,0 +1,19 @@
+# Render 블루프린트: GitHub에 올린 뒤 Render 대시보드에서 "New > Blueprint"로 이 저장소를 선택하세요.
+services:
+  - type: web
+    name: bang-online
+    runtime: node
+    plan: free
+    region: singapore        # 한국에서 가까운 리전 (대시보드에서 변경 가능)
+    buildCommand: npm ci
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: ACCESS_KEY      # 방 만들기 비밀번호 (대시보드에서 직접 입력하세요)
+        sync: false
+      - key: UPSTASH_REDIS_REST_URL     # 기록 저장용 (Upstash 대시보드의 REST API 값, DEPLOY.md 참고)
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
